@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="44703" started-at="2022-09-11T17:02:31 IST" finished-at="2022-09-11T17:03:16 IST">
+  <suite name="Suite" duration-ms="147640" started-at="2022-09-23T14:25:51 IST" finished-at="2022-09-23T14:28:18 IST">
     <groups>
       <group name="regression">
         <method signature="ForgetPwd.Tc_01(java.lang.String,java.lang.String)[pri:1, instance:ForgetPwd@6121c9d6]" name="Tc_01" class="ForgetPwd"/>
@@ -11,25 +11,25 @@
         <method signature="AutomationProj.Tc_01(java.lang.String,java.lang.String)[pri:1, instance:AutomationProj@a38d7a3]" name="Tc_01" class="AutomationProj"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="44703" started-at="2022-09-11T17:02:31 IST" finished-at="2022-09-11T17:03:16 IST">
+    <test name="Test" duration-ms="147640" started-at="2022-09-23T14:25:51 IST" finished-at="2022-09-23T14:28:18 IST">
       <class name="AutomationProj">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:AutomationProj@a38d7a3]" name="beforeSuite" is-config="true" duration-ms="8" started-at="2022-09-11T17:02:31 IST" finished-at="2022-09-11T17:02:31 IST">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:AutomationProj@a38d7a3]" name="beforeSuite" is-config="true" duration-ms="5" started-at="2022-09-23T14:25:51 IST" finished-at="2022-09-23T14:25:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:AutomationProj@a38d7a3]" name="beforeTest" is-config="true" duration-ms="0" started-at="2022-09-11T17:02:31 IST" finished-at="2022-09-11T17:02:31 IST">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:AutomationProj@a38d7a3]" name="beforeTest" is-config="true" duration-ms="0" started-at="2022-09-23T14:25:51 IST" finished-at="2022-09-23T14:25:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:AutomationProj@a38d7a3]" name="beforeClass" is-config="true" duration-ms="7600" started-at="2022-09-11T17:02:31 IST" finished-at="2022-09-11T17:02:39 IST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:AutomationProj@a38d7a3]" name="beforeClass" is-config="true" duration-ms="6401" started-at="2022-09-23T14:25:51 IST" finished-at="2022-09-23T14:25:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:AutomationProj@a38d7a3]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-09-11T17:02:39 IST" finished-at="2022-09-11T17:02:39 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:AutomationProj@a38d7a3]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-09-23T14:25:57 IST" finished-at="2022-09-23T14:25:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Tc_01(java.lang.String,java.lang.String)[pri:1, instance:AutomationProj@a38d7a3]" name="Tc_01" duration-ms="22492" started-at="2022-09-11T17:02:39 IST" data-provider="dp" finished-at="2022-09-11T17:03:01 IST">
+        <test-method status="FAIL" signature="Tc_01(java.lang.String,java.lang.String)[pri:1, instance:AutomationProj@a38d7a3]" name="Tc_01" duration-ms="45626" started-at="2022-09-23T14:25:57 IST" data-provider="dp" finished-at="2022-09-23T14:26:43 IST">
           <params>
             <param index="0">
               <value>
@@ -42,44 +42,106 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DE772S4Y2', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SG0308~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61331}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 711c338af154ff3f584966757983caa2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DE772S4Y2', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SG0308~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61331}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 711c338af154ff3f584966757983caa2
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at AutomationProj.Tc_01(AutomationProj.java:52)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tc_01 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:AutomationProj@a38d7a3]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-09-11T17:03:01 IST" finished-at="2022-09-11T17:03:01 IST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:AutomationProj@a38d7a3]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-09-23T14:26:43 IST" finished-at="2022-09-23T14:26:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:AutomationProj@a38d7a3]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-09-11T17:03:01 IST" finished-at="2022-09-11T17:03:01 IST">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:AutomationProj@a38d7a3]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-09-23T14:26:43 IST" finished-at="2022-09-23T14:26:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:AutomationProj@a38d7a3]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-09-11T17:03:16 IST" finished-at="2022-09-11T17:03:16 IST">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:AutomationProj@a38d7a3]" name="afterTest" is-config="true" duration-ms="2" started-at="2022-09-23T14:28:18 IST" finished-at="2022-09-23T14:28:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:AutomationProj@a38d7a3]" name="afterSuite" is-config="true" duration-ms="1" started-at="2022-09-11T17:03:16 IST" finished-at="2022-09-11T17:03:16 IST">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:AutomationProj@a38d7a3]" name="afterSuite" is-config="true" duration-ms="1" started-at="2022-09-23T14:28:18 IST" finished-at="2022-09-23T14:28:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- AutomationProj -->
       <class name="ForgetPwd">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:ForgetPwd@6121c9d6]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2022-09-11T17:02:31 IST" finished-at="2022-09-11T17:02:31 IST">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:ForgetPwd@6121c9d6]" name="beforeSuite" is-config="true" duration-ms="1" started-at="2022-09-23T14:25:51 IST" finished-at="2022-09-23T14:25:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:ForgetPwd@6121c9d6]" name="beforeTest" is-config="true" duration-ms="0" started-at="2022-09-11T17:02:31 IST" finished-at="2022-09-11T17:02:31 IST">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:ForgetPwd@6121c9d6]" name="beforeTest" is-config="true" duration-ms="0" started-at="2022-09-23T14:25:51 IST" finished-at="2022-09-23T14:25:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:ForgetPwd@6121c9d6]" name="beforeClass" is-config="true" duration-ms="7245" started-at="2022-09-11T17:03:01 IST" finished-at="2022-09-11T17:03:09 IST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:ForgetPwd@6121c9d6]" name="beforeClass" is-config="true" duration-ms="84630" started-at="2022-09-23T14:26:43 IST" finished-at="2022-09-23T14:28:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ForgetPwd@6121c9d6]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-09-11T17:03:09 IST" finished-at="2022-09-11T17:03:09 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ForgetPwd@6121c9d6]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-09-23T14:28:07 IST" finished-at="2022-09-23T14:28:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Tc_01(java.lang.String,java.lang.String)[pri:1, instance:ForgetPwd@6121c9d6]" name="Tc_01" duration-ms="7257" started-at="2022-09-11T17:03:09 IST" data-provider="dp" finished-at="2022-09-11T17:03:16 IST">
+        <test-method status="FAIL" signature="Tc_01(java.lang.String,java.lang.String)[pri:1, instance:ForgetPwd@6121c9d6]" name="Tc_01" duration-ms="10900" started-at="2022-09-23T14:28:07 IST" data-provider="dp" finished-at="2022-09-23T14:28:18 IST">
           <params>
             <param index="0">
               <value>
@@ -92,22 +154,72 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//a[text()='Forgot your password?']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DE772S4Y2', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[text()='Forgot your password?']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DE772S4Y2', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at ForgetPwd.Tc_01(ForgetPwd.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tc_01 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:ForgetPwd@6121c9d6]" name="afterClass" is-config="true" duration-ms="1" started-at="2022-09-11T17:03:16 IST" finished-at="2022-09-11T17:03:16 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:ForgetPwd@6121c9d6]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-09-11T17:03:16 IST" finished-at="2022-09-11T17:03:16 IST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:ForgetPwd@6121c9d6]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-09-23T14:28:18 IST" finished-at="2022-09-23T14:28:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:ForgetPwd@6121c9d6]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-09-11T17:03:16 IST" finished-at="2022-09-11T17:03:16 IST">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:ForgetPwd@6121c9d6]" name="afterClass" is-config="true" duration-ms="2" started-at="2022-09-23T14:28:18 IST" finished-at="2022-09-23T14:28:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:ForgetPwd@6121c9d6]" name="afterTest" is-config="true" duration-ms="1" started-at="2022-09-23T14:28:18 IST" finished-at="2022-09-23T14:28:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:ForgetPwd@6121c9d6]" name="afterSuite" is-config="true" duration-ms="0" started-at="2022-09-11T17:03:16 IST" finished-at="2022-09-11T17:03:16 IST">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:ForgetPwd@6121c9d6]" name="afterSuite" is-config="true" duration-ms="1" started-at="2022-09-23T14:28:18 IST" finished-at="2022-09-23T14:28:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

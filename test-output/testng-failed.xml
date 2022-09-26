@@ -9,13 +9,26 @@
           <include name="beforeClass"/>
           <include name="afterSuite"/>
           <include name="afterClass"/>
-          <include name="TC_02"/>
+          <include name="Tc_01" invocation-numbers="0"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- AutomationProj -->
+      <class name="ForgetPwd">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Tc_01" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- ForgetPwd -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
